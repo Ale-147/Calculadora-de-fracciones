@@ -1,0 +1,137 @@
+body { 
+    background-color: rgb(60, 184, 80); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+/* .contenedor-operacion{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+} */
+
+
+.letras{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+.fraccion{
+    width: 200px;
+    height:200px;
+   
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -200px;
+   
+   
+}
+
+.numerador1{
+width: 100px;
+height: 40px;
+border-radius: 5px;
+}
+
+
+.linea-division{
+    width: 100px;
+    height: 10px;
+    background-color: black;
+}
+
+
+.denominador1{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.fraccion1{
+     width: 200px;
+    height:200px;
+    
+     display: flex;
+    margin-left: 300px ;
+    margin-top: -200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+
+
+.numerador2{
+width: 100px;
+height: 40px;
+border-radius: 5px;
+}
+
+
+/* .linea-division{
+    width: 100px;
+    height: 10px;
+    background-color: black;
+} */
+
+
+.denominador2{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.contenedor-opciones{
+    width: 100px;
+    height: 50px;
+    
+    margin-top: -130px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.signo{
+    font-size: 50px;
+    color: black;
+    margin-top: -50px;
+    margin-left: 600px;
+}
+
+
+.fraccion2{
+     width: 200px;
+    height:200px;
+
+     display: flex;
+      
+    margin-left: 700px ;
+    margin-top: -130px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

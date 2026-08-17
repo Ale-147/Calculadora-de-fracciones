@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraccionarios</title>
+    <link rel="stylesheet" href="stilo.css">
+    <script src="java.js" defer></script> 
+</head>
+<body>
+
+    <header id="titulo">
+        <p class="letras">Operador de fraccionarios</p>
+    </header>
+    <br><br><br>
+
+    <!-- Contenedor principal de la aplicación -->
+    <nav class="contenedor-operacion">
+       
+        <!-- Fracción 1 -->
+        <div class="fraccion">
+            <input id="num1" class="numerador1" type="number" placeholder="Numerador"> 
+            <br>
+            <div class="linea-division"></div>
+            <br>
+            <input id="den1" class="denominador1" type="number" placeholder="Denominador">
+        </div>
+
+        <!-- Fracción 2 -->
+        <div class="fraccion1">
+            <input id="num2" class="numerador2" type="number" placeholder="Numerador"> 
+            <br>
+            <div class="linea-division"></div>
+            <br>
+            <input id="den2" class="denominador2" type="number" placeholder="Denominador">
+        </div>
+
+        <!-- Selector de operaciones -->
+        <div class="contenedor-opciones">
+            <!-- Agregamos id y el evento onchange para ejecutar la función -->
+            <select id="operacion" onchange="ejecutarOperacion()">
+                <option value="null">Selecciona</option>
+                <option value="suma">Sumar</option>
+                <option value="resta">Restar</option>
+                <option value="multiplicar">Multiplicar</option>
+                <option value="dividir">Dividir</option>
+            </select>
+        </div>
+
+        <div class="signo">=</div>
+
+        <!-- Cajas de resultado final -->
+        <div class="fraccion2">
+            <input id="resNum" class="numerador1" type="number" placeholder="resultado" readonly>
+            <br>
+            <div class="linea-division"></div>
+            <br>
+            <input id="resDen" class="denominador1" type="number" placeholder="resultado" readonly>
+        </div>
+        
+    </nav>
+    
+</body>
+</html>
