@@ -129,3 +129,6 @@
     font-size: 25px;
 
 }
+.circle, .circle1, .circle2 {
+    cursor: pointer; /* Muestra la manito de clic al pasar el mouse por las letras */
+}
