@@ -69,9 +69,9 @@ const inyectarRespuestas = () => {
     let opciones = [respuestaCorrecta, falsa1, falsa2];
     opciones.sort(() => Math.random() - 0.5);
 
-    const cuad1 = document.querySelector(".square");
-    const cuad2 = document.querySelector(".square1");
-    const cuad3 = document.querySelector(".square2");
+    const cuad1 = document.querySelector(".circle");
+    const cuad2 = document.querySelector(".circle1");
+    const cuad3 = document.querySelector(".circle2");
 
     cuad1.innerHTML = opciones[0];
     cuad2.innerHTML = opciones[1];

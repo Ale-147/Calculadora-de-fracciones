@@ -1,0 +1,236 @@
+/* --- CONFIGURACIÓN GENERAL Y FONDO --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f7f4; /* Fondo verde grisáceo muy claro y limpio */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2c3e50;
+}
+
+/* --- ENCABEZADO --- */
+#titulo {
+    background-color: #27ae60; /* Verde esmeralda */
+    color: white;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+}
+
+.letras {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- CONTENEDOR 1: OPERADOR DE FRACCIONARIOS --- */
+.contenedor-operacion {
+    background-color: white;
+    border: 2px solid #e2ebd5;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+/* Estilo para las fracciones */
+.fraccion, .fraccion1, .fraccion2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+}
+
+/* Inputs de las fracciones */
+.contenedor-operacion input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contenedor-operacion input[type="number"]:focus {
+    border-color: #2ecc71; /* Brillo verde al escribir */
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.3);
+}
+
+/* Inputs de resultado (deshabilitados) */
+.contenedor-operacion input[readonly] {
+    background-color: #ebf5fb;
+    border-color: #3498db;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Línea divisoria de la fracción */
+.linea-division {
+    width: 100%;
+    height: 4px;
+    background-color: #27ae60;
+    border-radius: 2px;
+    margin: 8px 0;
+}
+
+/* Selector de operaciones Dropdown */
+#operacion {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #27ae60;
+    border-radius: 8px;
+    background-color: white;
+    color: #27ae60;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+#operacion:hover {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Signo Igual (=) */
+.signo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* --- CONTENEDOR 2: SECCIÓN DE TRIVIA / EJERCICIO --- */
+#contenedor1 {
+    width: 500px;
+    height: 100px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#contenedor1 h2 {
+    color: white; /* Verde oscuro */
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.content2 h3 {
+    color: #7f8c8d;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+/* La ecuación matemática */
+.content3 {
+    background-color: #d4efdf; /* Fondo verde menta suave */
+    color: #196f3d;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 12px;
+    border: 2px dashed #27ae60;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+/* --- BOTONES DE LETRAS (A, B, C) --- */
+#content4 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+.circle, .circle1, .circle2 {
+    width: 60px;
+    height: 60px;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+    transition: all 0.2s ease;
+}
+
+.circle:hover, .circle1:hover, .circle2:hover {
+    transform: translateY(-5px);
+    background-color: #219653; /* Verde un poco más oscuro al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(33, 150, 83, 0.4);
+}
+
+/* --- CUADRADOS DE LOS NÚMEROS --- */
+#content5 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.square, .square1, .square2 {
+    width: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 5px 0;
+    border-bottom: 2px solid #bdc3c7; /* Línea sutil decorativa bajo el número */
+}
+
+/* --- CRONÓMETRO TIME --- */
+#time {
+    background-color: #34495e;
+    color: #ecc94b; /* Texto amarillo para que resalte como marcador */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: inline-block;
+}
+
+
+.contenedor-video {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;       /* Evita que el video se estire gigante en PC */
+    width: 100%;            /* Se adapta perfectamente a pantallas de celular */
+    margin: 40px auto 0 auto; /* Centra el bloque completo y da espacio arriba */
+    border-radius: 30px;
+    overflow: hidden;       /* ¡Obligatorio! Si no lo pones, el video se sale de las esquinas redondas */
+}
+
+/* Aplica esto también para que el video use todo el espacio del contenedor */
+.contenedor-video video, 
+.contenedor-video iframe {
+    width: 100%;
+    height: auto;
+}
+
+.testo, h1 , h2{
+    background-color: #27ae60;
+    border-radius: 10px;
+    color: #e2ebd5;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+      box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+}
