@@ -265,4 +265,111 @@ body {
     font-size: 20px;
     margin-top: 20px;
       box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+
+
+
+
+.ultimun{
+    width: 400px;
+    height: auto;
+    background-color: #27ae60;
+}
+
+
+
+}
+
+/* 1. Contenedor principal: los alinea en fila y les da espacio */
+.figuras {
+    display: flex;
+    flex-wrap: wrap; /* Permite que se adapte si la pantalla es pequeña */
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Separación perfecta y uniforme entre elementos */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 850px;
+    margin: 30px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 2. Estilo unificado para los inputs y el select */
+.figuras input, 
+.figuras select {
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f8fafc;
+    color: #334155;
+    transition: all 0.3s ease;
+}
+
+/* El primer input es para escribir, resalta al hacer clic */
+.figuras .uno:focus, 
+.figuras select:focus {
+    border-color: #3b82f6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Los inputs de área y perímetro son solo para mostrar resultados */
+.figuras .dos, 
+.figuras .tres {
+    background-color: #e2e8f0;
+    font-weight: bold;
+    color: #1e293b;
+    cursor: not-allowed; /* Muestra que no se puede editar */
+    width: 110px; /* Tamaño ideal para respuestas numéricas */
+}
+
+/* 3. Botón de acción llamativo */
+.figuras .boton10 {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #27ae60; /* Verde esmeralda moderno */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.figuras .boton10:hover {
+    background-color: #059669;
+}
+
+.figuras .boton10:active {
+    transform: scale(0.96);
+}
+
+/* 4. El contenedor donde aparece la figura (Abajo y centrado) */
+.figuras .mostrar {
+    width: 100%; /* Forzar a que se ponga abajo de la fila */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* Estilo para la imagen */
+#imagenMost {
+    max-width: 200px;
+    height: 200px;
+    object-fit: contain; /* Evita que la figura se deforme o estire */
+    background-color: #f1f5f9;
+    border: 2px dashed #cbd5e1; /* Un lindo borde punteado de guía */
+    border-radius: 12px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Si la imagen ya cargó una ruta real, le quitamos el borde punteado */
+#imagenMost[src*="http"], #imagenMost[src*=".png"], #imagenMost[src*=".jpg"] {
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }

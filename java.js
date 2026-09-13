@@ -181,3 +181,71 @@ const verificarRespuesta = (valorSeleccionado) => {
     }
 }
 
+
+
+
+// ultimo ejercicio
+
+function cambiarImagen(){
+    let seleccion = document.getElementById("miLista").value
+
+    let cajaImagen = document.getElementById("imagenMost")
+
+
+    if(seleccion === "Tr"){
+        cajaImagen.src = "img/cuadrado.png";
+    }
+
+    else if (seleccion === "Rec") {
+        cajaImagen.src = "img/rectangulo.png";
+
+        
+    } else if (seleccion === "Cu") {
+        cajaImagen.src = "img/triangulo.png";
+        
+    }
+}
+
+function cambiarFigura(){
+
+    let numero = parseFloat(document.querySelector('input[placeholder="Ingrese un numero"]').value);
+
+    let figuraseleccionada = document.querySelector(".figure").value;
+
+    if(isNaN(numero) || numero<=0){
+        alert("Ingrese un numero valido");
+        return;
+    }
+
+    let area = 0;
+    let perimetro = 0;
+
+    if (figuraseleccionada === "Cu") {
+
+        area= numero*numero;
+        perimetro = numero*4
+        
+    }
+
+    else if (figuraseleccionada === "Rec") {
+
+        let altura = 5;
+
+        area= numero* altura;
+        perimetro = (numero*2) + (altura*2);
+        
+    }
+
+    else if (figuraseleccionada === "Tr") {
+        let alura1 = 7;
+
+        area = (numero*alura1)/2;
+        perimetro= numero*3;
+
+        
+    }
+
+    document.querySelector('input[placeholder="area"]').value=area;
+    document.querySelector('input[placeholder="perimetro"]').value=perimetro;
+
+}
