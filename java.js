@@ -204,6 +204,22 @@ function cambiarImagen(){
         cajaImagen.src = "img/triangulo.png";
         
     }
+
+
+    else if (seleccion === "Pent") {
+        cajaImagen.src = "img/pentagono.png"
+    }
+
+    else if (seleccion === "Hexa") {
+        cajaImagen.src = "img/hexagono.png"
+    }
+
+    else if (seleccion === "Octa") {
+        cajaImagen.src = "img/octagono.png"
+    }
+
+
+
 }
 
 function cambiarFigura(){
@@ -243,6 +259,24 @@ function cambiarFigura(){
         perimetro= numero*3;
 
         
+    }
+
+    else if (figuraseleccionada === "Pent") {
+        
+        area= (5*(numero * numero))/2.91;
+        perimetro= numero*5;
+    }
+
+    else if (figuraseleccionada === "Hexa") {
+        area= (numero*numero) * 2.598;
+        perimetro=numero*6;
+        
+    }
+
+
+    else if (figuraseleccionada === "Octa") {
+        area= (numero*numero) * 4.8284;
+        perimetro= numero*8
     }
 
     document.querySelector('input[placeholder="area"]').value=area;
