@@ -193,7 +193,7 @@ function cambiarImagen(){
 
 
     if(seleccion === "Tr"){
-        cajaImagen.src = "img/cuadrado.png";
+        cajaImagen.src = "img/triangulo.png";
     }
 
     else if (seleccion === "Rec") {
@@ -201,7 +201,7 @@ function cambiarImagen(){
 
         
     } else if (seleccion === "Cu") {
-        cajaImagen.src = "img/triangulo.png";
+        cajaImagen.src = "img/cuadrado.png";
         
     }
 
